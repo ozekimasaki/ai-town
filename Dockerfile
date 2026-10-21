@@ -23,7 +23,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | b
 
 # Add NVM to PATH
 ENV NVM_DIR /root/.nvm
-ENV NODE_VERSION 18.0.0
+ENV NODE_VERSION 24.22.1
 RUN . $NVM_DIR/nvm.sh && nvm install $NODE_VERSION
 ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
